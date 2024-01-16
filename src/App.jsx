@@ -1,9 +1,22 @@
+import React, { useEffect } from "react";
 import "./App.css";
+import Banner from "./Components/Banner";
+import Banner2 from "./Components/Banner2";
+import Footer from "./Components/Footer";
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
 import Services from "./Components/Services";
 import background from "./assets/earth-bg.mp4";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
+  React.useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-in-out",
+    });
+  });
   return (
     <div className="">
       <div className="h-[700px] relative">
@@ -19,7 +32,10 @@ function App() {
         <Hero />
       </div>
       {/* service section start  */}
-      <Services/>
+      <Services />
+      <Banner />
+      <Banner2 />
+      <Footer />
     </div>
   );
 }

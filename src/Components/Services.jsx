@@ -34,7 +34,8 @@ const Services = () => {
         <div className="min-h-[400px] ">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 relative z-10">
             {ServicesData.map((data, index) => (
-              <div
+              <div data-aos="fade-up"
+              data-aos-delay={data.aosDelay}
                 key={index}
                 className="min-h-[180px] flex flex-col gap-2 justify-center items-center bg-sky-900/60 rounded-xl backdrop-blur-sm text-center text-2xl py-8 px-3 w-full lg:w-[300px] mx-auto"
               >

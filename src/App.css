@@ -1,0 +1,4 @@
+
+    .primary-button{
+        @apply bg-blue-400 text-white hover:bg-blue-600 px-4 py-1 rounded-md duration-200 hover:scale-105 cursor-pointer
+    }
